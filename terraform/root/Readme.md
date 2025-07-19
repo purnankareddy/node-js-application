@@ -10,12 +10,15 @@ root/
 │   ├── appointment-service.js
 │   ├── package.json
 │   └── Dockerfile
+
+
 Steps to Build and Run
 
 1. Prepare Each Service
 
 In both patient-service and appointment-service folders:
 Add package.json with dependencies:
+
 {
   "name": "service-name",
   "version": "1.0.0",
@@ -24,6 +27,7 @@ Add package.json with dependencies:
     "express": "^4.18.2"
   }
 }
+
 Create Dockerfile:
 # Use Node.js base image
 FROM node:18
